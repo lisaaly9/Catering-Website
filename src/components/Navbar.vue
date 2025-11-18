@@ -1,5 +1,5 @@
 <template>
-  <nav class="relative bg-[#003366]/90 after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10">
+  <nav class="relative bg-[#5B3A29] after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10">
     <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
       <div class="relative flex h-16 items-center justify-between">
         <!-- Tombol menu mobile -->
@@ -7,7 +7,7 @@
           <button
             @click="isMenuOpen = !isMenuOpen"
             type="button"
-            class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-white/5 hover:text-white focus:outline-2 focus:-outline-offset-1 focus:outline-indigo-500"
+            class="relative inline-flex items-center justify-center rounded-md p-2 text-white hover:bg-white/5 hover:text-white focus:outline-2 focus:-outline-offset-1 focus:outline-indigo-500"
           >
             <span class="sr-only">Open main menu</span>
             <!-- Icon buka -->
@@ -38,19 +38,19 @@
         </div>
 
         <!-- Logo dan link desktop -->
-        <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+        <div class="flex flex-1 items-center justify-center sm:justify-between">
           <div class="flex shrink-0 items-center">
             <img
               src="../assets/icons/logo.svg"
-              alt="Your Company"
-              class="h-13 w-auto"
+              alt="Gudeg"
+              class="h-12 w-auto"
             />
           </div>
-          <div class="hidden sm:ml-6 sm:block">
+          <div class="hidden sm:ml-6 sm:block ml-auto mt-1">
             <div class="flex space-x-4">
               <router-link
                 to="/"
-                class="rounded-md px-3 py-2 text-sm font-medium text-blue-100 hover:bg-blue-500/20 hover:text-white"
+                class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-white/10"
                 active-class="bg-gray-900/50 text-white"
                 exact-active-class="bg-gray-900/50 text-white"
               >
@@ -58,42 +58,38 @@
               </router-link>
               <router-link
                 to="/contact"
-                class="rounded-md px-3 py-2 text-sm font-medium text-blue-100 hover:bg-blue-500/20 hover:text-white"
+                class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-white/10"
                 active-class="bg-gray-900/50 text-white"
                 exact-active-class="bg-gray-900/50 text-white"
               >
-                Contact
+                About
+              </router-link>
+              <router-link
+                to="/contact"
+                class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-white/10"
+                active-class="bg-gray-900/50 text-white"
+                exact-active-class="bg-gray-900/50 text-white"
+              >
+                Menu
+              </router-link>
+              <router-link
+                to="/contact"
+                class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-white/10"
+                active-class="bg-gray-900/50 text-white"
+                exact-active-class="bg-gray-900/50 text-white"
+              >
+                Gallery
+              </router-link>
+              <router-link
+                to="/contact"
+                class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-white/10"
+                active-class="bg-gray-900/50 text-white"
+                exact-active-class="bg-gray-900/50 text-white"
+              >
+                Order
               </router-link>
             </div>
           </div>
-        </div>
-
-        <!-- Profil -->
-        <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-          <button
-            type="button"
-            class="relative rounded-full p-1 text-gray-400 hover:text-white focus:outline-2 focus:outline-offset-2 focus:outline-indigo-500"
-          >
-            <span class="sr-only">View notifications</span>
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="1.5"
-              class="size-6"
-            >
-              <path
-                d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </button>
-          <img
-            src="https://i.pinimg.com/736x/f0/72/5b/f0725b7c078a3ec5b7b582894b9f7fba.jpg"
-            alt="profile"
-            class="size-8 rounded-full ml-3"
-          />
         </div>
       </div>
     </div>
@@ -102,10 +98,29 @@
     <div v-show="isMenuOpen" class="sm:hidden">
       <div class="space-y-1 px-2 pt-2 pb-3 text-center">
         <router-link
-          to="/"class="block rounded-md px-3 py-2 text-sm font-medium text-blue-100 hover:bg-blue-500/20 hover:text-white"active-class="text-white">Home
+          to="/"
+          class="block rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-white/10"
+          active-class="text-white">Home
         </router-link>
         <router-link
-          to="/contact"class="block rounded-md px-3 py-2 text-sm font-medium text-blue-100 hover:bg-blue-500/20 hover:text-white"active-class="text-white">Contact
+          to="/contact"
+          class="block rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-white/10"
+          active-class="text-white">About
+        </router-link>
+        <router-link
+          to="/contact"
+          class="block rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-white/10"
+          active-class="text-white">Menu
+        </router-link>
+        <router-link
+          to="/contact"
+          class="block rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-white/10"
+          active-class="text-white">Gallery
+        </router-link>
+        <router-link
+          to="/contact"
+          class="block rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-white/10"
+          active-class="text-white">Order
         </router-link>
       </div>
     </div>
