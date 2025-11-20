@@ -22,9 +22,7 @@
 	</section>
 
     <!--Why Choose us-->
-    <section 
-    id="features"
-    class="px-6 py-16 md:py-20 bg-[#E0CBA8]">
+    <section id="features" class="px-6 py-16 md:py-20 bg-[#E0CBA8]">
     <div class="max-w-4xl mx-auto text-center mb-20">
         <h2 class="text-3xl md:text-4xl font-bold text-[#5B3A29]">“Kenapa Harus Pilih Catering Ini?”</h2>
     </div>
@@ -54,7 +52,6 @@
         <p class="text-[#5B3A29] font-semibold text-lg">Harga Bersahabat</p>
     </div>
     </div>
-
     </section>
 
     <!--Statistik-->

@@ -55,7 +55,7 @@
                 exact-active-class="bg-gray-900/50 text-white">Home
               </router-link>
               <router-link
-                to="/contact"
+                to="/about"
                 class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-white/10"
                 active-class="bg-gray-900/50 text-white"
                 exact-active-class="bg-gray-900/50 text-white">About
@@ -67,7 +67,7 @@
                 exact-active-class="bg-gray-900/50 text-white">Menu
               </router-link>
               <router-link
-                to="/contact"
+                to="/gallery"
                 class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-white/10"
                 active-class="bg-gray-900/50 text-white"
                 exact-active-class="bg-gray-900/50 text-white">Gallery
@@ -93,7 +93,7 @@
           active-class="text-white">Home
         </router-link>
         <router-link
-          to="/contact"
+          to="/about"
           class="block rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-white/10"
           active-class="text-white">About
         </router-link>
@@ -103,7 +103,7 @@
           active-class="text-white">Menu
         </router-link>
         <router-link
-          to="/contact"
+          to="/gallery"
           class="block rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-white/10"
           active-class="text-white">Gallery
         </router-link>

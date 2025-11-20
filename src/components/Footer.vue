@@ -2,16 +2,16 @@
   <footer class="w-full bg-[#5B3A29] pt-14 text-[#FFF8E1]">
     <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-3 gap-12">
       <div class="flex gap-6 items-start ">
-        <img src="../assets/icons/logo.svg" alt="Gudeg Bu Wik" class="w-36 mt-1" />
+        <img src="../assets/icons/logo.svg" alt="Gudeg Bu Wik" class="w-50 mt-1" />
         <p class="text-sm leading-relaxed w-64 mt-5 ">“Kami melayani catering harian, acara,dan prasmanan dengan cita rasa rumahan yang istimewa.”</p>
       </div>
 
-      <div class="flex flex-col gap-1 text-sm font-semibold ml-86">
-        <p>Home</p>
-        <p>About</p>
-        <p>Menu</p>
-        <p>Gallery</p>
-        <p>Order</p>
+      <div class="flex flex-col gap-1 text-sm font-semibold text-center mx-auto lg:text-right lg:mx-0">
+        <router-link to="/" class="hover:underline">Home</router-link>
+        <router-link to="/about" class="hover:underline">About</router-link>
+        <router-link to="/menu" class="hover:underline">Menu</router-link>
+        <router-link to="/gallery" class="hover:underline">Gallery</router-link>
+        <router-link to="/order" class="hover:underline">Order</router-link>
       </div>
 
       <!-- buat menghubungi  -->
