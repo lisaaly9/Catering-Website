@@ -28,73 +28,103 @@
     </div>
     <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
-    <!-- Card 1 -->
-    <div class="bg-white/40 rounded-xl shadow-md p-8 text-center">
+      <div 
+        v-for="card in cards" 
+        :key="card.id" 
+        class="bg-white/40 rounded-x1 shadow-md p-8 text-center" >
         <div class="mb-4 flex justify-center">
-        <img src="../assets/icons/jam.png" class="w-30 h-30" />
+          <img :src="card.icon" class="w-30 h-30" />
         </div>
-        <p class="text-[#5B3A29] font-semibold text-lg">Tepat Waktu</p>
-    </div>
-
-    <!-- Card 2 -->
-    <div class="bg-white/40 rounded-xl shadow-md p-8 text-center">
-        <div class="mb-4 flex justify-center">
-        <img src="../assets/icons/piring.png" class="w-30 h-30" />
-        </div>
-        <p class="text-[#5B3A29] font-semibold text-lg">Rasa Lezat</p>
-    </div>
-
-    <!-- Card 3 -->
-    <div class="bg-white/40 rounded-xl shadow-md p-8 text-center">
-        <div class="mb-4 flex justify-center">
-        <img src="../assets/icons/uang.png" class="w-30 h-30" />
-        </div>
-        <p class="text-[#5B3A29] font-semibold text-lg">Harga Bersahabat</p>
-    </div>
+        <p class="text-[#5B3A29] font-semibold text-lg">{{ card.title }}</p>
+      </div>
     </div>
     </section>
+
+    <!--Menu Favorit-->
+    <section class="w-full bg-[#FBF2D8] flex flex-col items-center pb-20">
+      <h2 class="text-2xl md:text-4xl font-bold text-[#5B3A29] mb-10 pt-10">
+        MENU FAVORIT
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div
+          v-for="item in makananList"
+          :key="item.id"
+          class="p-6 max-w-xs rounded-2xl bg-white/20 backdrop-blur-md border border-white/30
+                 shadow-lg shadow-black/10 hover:shadow-xl hover:shadow-black/20
+                 transition flex flex-col items-center"
+        >
+          <img :src="item.image" class="rounded-xl shadow-md w-full object-cover" />
+          <div class="mt-4 text-center">
+            <h4 class="font-bold text-xl text-[#5B3A29]">{{ item.name }}</h4>
+            <p class="mt-2 text-[#5B3A29]/80">{{ item.price }}</p>
+
+            <button
+              @click="lihatDetail(item)"
+              class="mt-4 rounded-xl bg-[#E17B34] px-4 py-2 text-sm text-white shadow-md
+                     hover:bg-[#cf6f2f] transition"
+            >
+              Lihat Detail
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <PopupMenuDetail 
+        v-if="showModal"
+        :food="selectedFood"
+        @close="showModal = false"
+      />
+    </section>
+
+
 
     <!--Statistik-->
     <section class="w-full bg-[#F6E7CE] py-12">
     <p class="text-center font-semibold text-xl md:text-2xl text-[#5B3A29]">Kepercayaan Pelanggan</p>
     <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 gap-y-5 lg:gap-y-0 gap-x-5 place-items-center w-full mx-auto max-w-6xl px-5">
 
-    <!-- 1 -->
-    <div class="flex flex-col justify-center items-center bg-white px-4 h-[140px] md:h-[190px] w-full md:w-[260px] rounded-lg shadow-sm">
+    <div
+      v-for="s in stats"
+      :key="s.id"
+      class="flex flex-col justify-center items-center bg-white px-4 h-[140px] md:h-[190px] w-full md:w-[260px] rounded-lg shadow-sm">
+      
       <div class="flex flex-row justify-center items-center">
-        <img src="../assets/icons/produk dibuat.png" class="w-[40px] h-[40px] md:w-[55px] md:h-[55px]" />
-        <p class="font-bold text-3xl md:text-4xl text-[#5B3A29] ml-2">540</p>
+        <img :src="s.icon" class="w-10 h-10 md:w-12 md:h-12 mr-3"/>
+        <p class="font-bold text-3x1 md:text-4x1 text-[#5B3A29] ml-2">{{ s.value }}</p>
       </div>
-      <p class="text-sm md:text-lg text-[#E17B34] mt-3 text-center">Produk dibuat</p>
-    </div>
-
-    <!-- 2 -->
-    <div class="flex flex-col justify-center items-center bg-white px-4 h-[140px] md:h-[190px] w-full md:w-[260px] rounded-lg shadow-sm">
-      <div class="flex flex-row justify-center items-center">
-        <img src="../assets/icons/pesanan tersampaikan.png" class="w-[40px] h-[40px] md:w-[55px] md:h-[55px]" />
-        <p class="font-bold text-3xl md:text-4xl text-[#5B3A29] ml-2">2500</p>
-      </div>
-      <p class="text-sm md:text-lg text-[#E17B34] mt-3 text-center">Pesanan tersampaikan</p>
-    </div>
-
-    <!-- 3 -->
-    <div class="flex flex-col justify-center items-center bg-white px-4 h-[140px] md:h-[190px] w-full md:w-[260px] rounded-lg shadow-sm">
-      <div class="flex flex-row justify-center items-center">
-        <img src="../assets/icons/rating pelanggan.png" class="w-[40px] h-[40px] md:w-[55px] md:h-[55px]" />
-        <p class="font-bold text-3xl md:text-4xl text-[#5B3A29] ml-2">4.9</p>
-      </div>
-      <p class="text-sm md:text-lg text-[#E17B34] mt-3 text-center">Rating Pelanggan</p>
-    </div>
-
-    <!-- 4 -->
-    <div class="flex flex-col justify-center items-center bg-white px-4 h-[140px] md:h-[190px] w-full md:w-[260px] rounded-lg shadow-sm">
-      <div class="flex flex-row justify-center items-center">
-        <img src="../assets/icons/pengalaman.png" class="w-[40px] h-[40px] md:w-[55px] md:h-[55px]" />
-        <p class="font-bold text-3xl md:text-4xl text-[#5B3A29] ml-2">5</p>
-      </div>
-      <p class="text-sm md:text-lg text-[#E17B34] mt-3 text-center">Pengalaman (Tahun)</p>
+      <p class="text-sm md:text-lg text-[#E17B34] mt-3 text-center">{{ s.label }}</p>
     </div>
   </div>
 </section>
 
 </template>
+
+<script>
+import { cards } from "../data/cards";
+import { stats } from "../data/stats";
+import { makanan } from "../data/makanan";
+import PopupMenuDetail from "../components/PopupMenuDetail.vue";
+
+export default {
+  name: "HomeSection",
+  data() {
+    return {
+      cards: cards,
+      stats: stats,
+      makananList: makanan.slice(0, 4),
+      showModal: false,
+      selectedFood: null,
+    };
+  },
+  methods: {
+    lihatDetail(food) {
+      this.selectedFood = food;
+      this.showModal = true;
+    },
+  },
+  components: {
+    PopupMenuDetail,
+  },
+};
+</script>

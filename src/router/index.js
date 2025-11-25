@@ -1,7 +1,9 @@
 import { createWebHistory, createRouter } from "vue-router";
 import HomePage from "@/pages/HomePage.vue";
 import AboutPage from "@/pages/AboutPage.vue";
+import MenuPage from "@/pages/MenuPage.vue";
 import GalleryPage from "@/pages/GalleryPage.vue";
+import ContactPage from "@/pages/ContactPage.vue";
 
 const routes = [
     {
@@ -15,10 +17,21 @@ const routes = [
         component: AboutPage,
     },
     {
+        path: "/menu",
+        name: MenuPage,
+        component: MenuPage,
+    },
+    {
         path: "/gallery",
         name: GalleryPage,
         component: GalleryPage,
     },
+    {
+        path: "/contact",
+        name: ContactPage,
+        component: ContactPage,
+    }
+    
 ];
 
 const router = createRouter({
