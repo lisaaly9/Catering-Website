@@ -86,4 +86,57 @@
         </div>
     </section>
 
+    <section class="bg-gradient-to-t from-[#FFF8E1] to-[#FFF8E1] text-[#FFF8E1] py-9 px-6 text-center">
+        <h2 class="text-3xl font-bold text-[#5B3A29] mb-2 text-center">Apa Kata Mereka</h2>
+        <p class="text-lg text-[#5B3A29]/80 mb-6 text-center">Mereka yang sudah merasakan pelayanan dan cita rasa masakan</p>
+    </section>
+
+    <section class="py-20 bg-[#FFF3D6] flex justify-center">
+  <div class="w-full max-w-3xl text-center">
+
+    <!-- Judul -->
+    <h2 class="text-3xl md:text-4xl font-semibold text-[#5B3A29] mb-3">
+      Testimonial
+    </h2>
+    <p class="text-[#7D5F4B] mb-10">
+      Apa kata mereka yang sudah mencoba layanan kami
+    </p>
+
+    <!-- LIST TESTIMONI -->
+    <div class="space-y-8">
+
+      <!-- CARD 1 -->
+      <div class="bg-[#F5E3C2] rounded-2xl p-6 shadow-sm border border-[#E5CDA3]">
+        <div class="text-yellow-500 text-xl mb-2">★★★★★</div>
+        <p class="text-[#5B3A29] italic mb-4">
+          “Pelayanannya cepat dan makanannya enak banget!! Semua tamu puas.”
+        </p>
+        <p class="font-semibold text-[#4A1C4F]">Dewi S.</p>
+        <p class="text-[#7D5F4B] text-sm">Surabaya</p>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="bg-[#F5E3C2] rounded-2xl p-6 shadow-sm border border-[#E5CDA3]">
+        <div class="text-yellow-500 text-xl mb-2">★★★★★</div>
+        <p class="text-[#5B3A29] italic mb-4">
+          “Wahhh ini enak banget!! harganya juga nggak terlalu mahal.”
+        </p>
+        <p class="font-semibold text-[#4A1C4F]">Tasya.</p>
+        <p class="text-[#7D5F4B] text-sm">Handil</p>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="bg-[#F5E3C2] rounded-2xl p-6 shadow-sm border border-[#E5CDA3]">
+        <div class="text-yellow-500 text-xl mb-2">★★★★★</div>
+        <p class="text-[#5B3A29] italic mb-4">
+          “Rasanya pas di lidah.”
+        </p>
+        <p class="font-semibold text-[#4A1C4F]">Chelsy</p>
+        <p class="text-[#7D5F4B] text-sm">Bogor</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 </template>

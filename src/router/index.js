@@ -3,7 +3,7 @@ import HomePage from "@/pages/HomePage.vue";
 import AboutPage from "@/pages/AboutPage.vue";
 import MenuPage from "@/pages/MenuPage.vue";
 import GalleryPage from "@/pages/GalleryPage.vue";
-import ContactPage from "@/pages/ContactPage.vue";
+import OrderPage from "@/pages/OrderPage.vue";
 
 const routes = [
     {
@@ -27,9 +27,9 @@ const routes = [
         component: GalleryPage,
     },
     {
-        path: "/contact",
-        name: ContactPage,
-        component: ContactPage,
+        path: "/order",
+        name: OrderPage,
+        component: OrderPage,
     }
     
 ];
