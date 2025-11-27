@@ -7,7 +7,7 @@
 
     <div class="relative bg-white rounded-2xl shadow-2xl p-4 sm:p-6 w-[90%] max-w-md max-h-[90vh] overflow-y-auto z-50 animate-[fadeIn_.25s_ease]">
 
-      <!-- Close button -->
+      <!-- button tutup -->
       <button 
         @click="$emit('close')" 
         class="absolute right-4 top-4 text-gray-600 hover:text-black text-xl">
@@ -40,8 +40,7 @@
               <div 
                 v-for="(item, index) in food.items"
                 :key="index"
-                class="flex items-center gap-2 justify-start"
-              >
+                class="flex items-center gap-2 justify-start">
                 <span class="text-sm">●</span>
                 <span class="text-gray-800 text-sm">{{ item }}</span>
               </div>
@@ -50,12 +49,10 @@
 
           <!-- tombol order -->
           <button 
-            class="mt-6 px-5 py-2 rounded-xl bg-[#E17B34] text-white font-semibold hover:bg-[#cf6f2f] transition"
-          >
+            class="mt-6 px-5 py-2 rounded-xl bg-[#E17B34] text-white font-semibold hover:bg-[#cf6f2f] transition">
             Pesan Sekarang
           </button>
         </div>
-
       </div>
     </div>
   </div>
