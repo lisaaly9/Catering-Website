@@ -1,13 +1,9 @@
 <script setup>
-import Navbar from '../components/Navbar.vue'
 import HomeSection from '@/components/HomeSection.vue';
-import Footer from '@/components/Footer.vue';
 </script>
 
 <template>
-  <Navbar/>
   <HomeSection/>
-  <Footer/>
 </template>
 
 

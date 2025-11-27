@@ -5,6 +5,7 @@ export const makanan = [
         price: "Rp25.000 / porsi",
         image: new URL('@/assets/images/makanan/makanan1.jpg', import.meta.url).href,
         description: "Ayam goreng renyah dengan bumbu khas",
+        category: "Makanan",
         items: ["Ayam goreng", "Nasi putih", "Sambal", "Sayur"]
     },
     {
@@ -13,6 +14,7 @@ export const makanan = [
         price: "Rp20.000 / porsi",
         image: new URL('@/assets/images/makanan/makanan2.jpg', import.meta.url).href,
         description: "Nasi uduk gurih dengan lauk pelengkap",
+        category: "Makanan",
         items: ["Nasi uduk", "Telur rebus", "Kering tempe", "Sambal"]
     },
     {
@@ -21,6 +23,7 @@ export const makanan = [
         price: "Rp27.777 / porsi",
         image: new URL('@/assets/images/makanan/makanan3.jpg', import.meta.url).href,
         description: "Ayam dan udang segar dengan saus jeruk manis",
+        category: "Makanan",
         items: ["Ayam", "Udang", "Nasi putih", "Saus jeruk manis"]
     },
     {
@@ -29,6 +32,7 @@ export const makanan = [
         price: "Rp27.777 / porsi",
         image: new URL('@/assets/images/makanan/makanan4.jpg', import.meta.url).href,
         description: "Lalapan segar dengan sambal terasi khas",
+        category: "Makanan",
         items: ["Timun", "Kol", "Basil", "Tempe/Tahu", "Sambal terasi"]
     },
     {
@@ -37,6 +41,7 @@ export const makanan = [
         price: "Rp30.000 / porsi",
         image: new URL('@/assets/images/makanan/makanan5.jpg', import.meta.url).href,
         description: "Nasi Padang lengkap dengan berbagai lauk",
+        category: "Makanan",
         items: ["Nasi putih", "Rendang", "Sayur nangka", "Sambal ijo"]
     },
     {
@@ -45,6 +50,7 @@ export const makanan = [
         price: "Rp22.000 / porsi",
         image: new URL('@/assets/images/makanan/makanan6.jpg', import.meta.url).href,
         description: "Sate ayam empuk dengan bumbu kacang",
+        category: "Makanan",
         items: ["10 tusuk sate", "Lontong", "Bumbu kacang", "Bawang goreng"]
     },
     {
@@ -53,6 +59,7 @@ export const makanan = [
         price: "Rp35.000 / porsi",
         image: new URL('@/assets/images/makanan/makanan7.jpg', import.meta.url).href,
         description: "Rendang daging sapi empuk dengan bumbu rempah",
+        category: "Makanan",
         items: ["Daging rendang", "Nasi putih", "Daun singkong", "Sambal"]
     },
     {
@@ -61,6 +68,7 @@ export const makanan = [
         price: "Rp18.000 / porsi",
         image: new URL('@/assets/images/makanan/makanan8.jpg', import.meta.url).href,
         description: "Gado-gado segar dengan saus kacang lezat",
+        category: "Makanan",
         items: ["Sayuran rebus", "Tahu", "Telur", "Saus kacang"]
     },
     {
@@ -69,6 +77,7 @@ export const makanan = [
         price: "Rp15.000 / porsi",
         image: new URL('@/assets/images/makanan/makanan9.jpg', import.meta.url).href,
         description: "Bakso kenyal dengan kuah kaldu gurih",
+        category: "Makanan",
         items: ["Bakso sapi", "Mie kuning", "Soun", "Daun bawang"]
     },
     {
@@ -77,6 +86,7 @@ export const makanan = [
         price: "Rp20.000 / porsi",
         image: new URL('@/assets/images/makanan/makanan10.jpg', import.meta.url).href,
         description: "Mie goreng spesial dengan sayuran segar",
+        category: "Makanan",
         items: ["Mie goreng", "Telur", "Sawi", "Wortel"]
     },
     {
@@ -85,6 +95,7 @@ export const makanan = [
         price: "Rp27.777 / porsi",
         image: new URL('@/assets/images/makanan/makanan11.jpg', import.meta.url).href,
         description: "Seafood segar dengan saus pedas manis",
+        category: "Makanan",
         items: ["Udang", "Cumi", "Kerang", "Nasi putih"]
     },
     {
@@ -93,6 +104,7 @@ export const makanan = [
         price: "Rp27.777 / porsi",
         image: new URL('@/assets/images/makanan/makanan12.jpg', import.meta.url).href,
         description: "Gami lezat dengan bumbu khas",
+        category: "Makanan",
         items: ["Ayam gami", "Nasi putih", "Sambal gami"]
     },
     {
@@ -101,6 +113,7 @@ export const makanan = [
         price: "Rp27.777 / porsi",
         image: new URL('@/assets/images/makanan/makanan13.jpg', import.meta.url).href,
         description: "Spagethi dengan saus bolognese",
+        category: "Makanan",
         items: ["Spaghetti", "Saus bolognese", "Keju parmesan"]
     },
 ];
