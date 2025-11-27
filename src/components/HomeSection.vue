@@ -50,9 +50,7 @@
         <div
           v-for="item in makananList"
           :key="item.id"
-          class="p-6 max-w-xs rounded-2xl bg-white/20 backdrop-blur-md border border-white/30
-                 shadow-lg shadow-black/10 hover:shadow-xl hover:shadow-black/20
-                 transition flex flex-col items-center"
+          class="p-6 max-w-xs rounded-2xl bg-white/20 backdrop-blur-md border border-white/30 shadow-lg shadow-black/10 hover:shadow-xl hover:shadow-black/20 transition flex flex-col items-center"
         >
           <img :src="item.image" class="rounded-xl shadow-md w-full object-cover" />
           <div class="mt-4 text-center">
@@ -61,8 +59,7 @@
 
             <button
               @click="lihatDetail(item)"
-              class="mt-4 rounded-xl bg-[#E17B34] px-4 py-2 text-sm text-white shadow-md
-                     hover:bg-[#cf6f2f] transition"
+              class="mt-4 rounded-xl bg-[#E17B34] px-4 py-2 text-sm text-white shadow-md hover:bg-[#cf6f2f] transition"
             >
               Lihat Detail
             </button>
@@ -112,7 +109,7 @@ export default {
     return {
       cards: cards,
       stats: stats,
-      makananList: makanan.slice(0, 4),
+      makananList: makanan.slice(0,4),
       showModal: false,
       selectedFood: null,
     };

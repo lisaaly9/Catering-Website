@@ -1,12 +1,12 @@
 export const makanan = [
     {
         id: 1,
-        name: "Ayam Goreng",
+        name: "Sayuran",
         price: "Rp25.000 / porsi",
         image: new URL('@/assets/images/makanan/makanan1.jpg', import.meta.url).href,
-        description: "Ayam goreng renyah dengan bumbu khas",
+        description: "Sayuran segar ",
         category: "Makanan",
-        items: ["Ayam goreng", "Nasi putih", "Sambal", "Sayur"]
+        items: ["Selada", "Jagung manis", "Ubi ungu"]
     },
     {
         id: 2,
@@ -28,8 +28,8 @@ export const makanan = [
     },
     {
         id: 4,
-        name: "Lalapan",
-        price: "Rp27.777 / porsi",
+        name: "Geprek",
+        price: "Rp20.000 / porsi",
         image: new URL('@/assets/images/makanan/makanan4.jpg', import.meta.url).href,
         description: "Lalapan segar dengan sambal terasi khas",
         category: "Makanan",
@@ -106,14 +106,5 @@ export const makanan = [
         description: "Gami lezat dengan bumbu khas",
         category: "Makanan",
         items: ["Ayam gami", "Nasi putih", "Sambal gami"]
-    },
-    {
-        id: 13,
-        name: "Spagethi",
-        price: "Rp27.777 / porsi",
-        image: new URL('@/assets/images/makanan/makanan13.jpg', import.meta.url).href,
-        description: "Spagethi dengan saus bolognese",
-        category: "Makanan",
-        items: ["Spaghetti", "Saus bolognese", "Keju parmesan"]
     },
 ];

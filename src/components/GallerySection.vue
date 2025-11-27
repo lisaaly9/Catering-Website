@@ -51,49 +51,23 @@
     </section>
 
     <section class="py-20 bg-[#FFF3D6] flex justify-center">
-  <div class="w-full max-w-3xl text-center">
+    <div class="w-full max-w-3xl text-center">
+      <h2 class="text-3xl md:text-4xl font-semibold text-[#5B3A29] mb-3"> Testimonial </h2>
+      <p class="text-[#7D5F4B] mb-10"> Apa kata mereka yang sudah mencoba layanan kami </p>
 
-    <!-- Judul -->
-    <h2 class="text-3xl md:text-4xl font-semibold text-[#5B3A29] mb-3">
-      Testimonial
-    </h2>
-    <p class="text-[#7D5F4B] mb-10">
-      Apa kata mereka yang sudah mencoba layanan kami
-    </p>
-
-    <!-- LIST TESTIMONI -->
     <div class="space-y-8">
-
-      <!-- CARD 1 -->
-      <div class="bg-[#F5E3C2] rounded-2xl p-6 shadow-sm border border-[#E5CDA3]">
-        <div class="text-yellow-500 text-xl mb-2">★★★★★</div>
-        <p class="text-[#5B3A29] italic mb-4">
-          “Pelayanannya cepat dan makanannya enak banget!! Semua tamu puas.”
-        </p>
-        <p class="font-semibold text-[#4A1C4F]">Dewi S.</p>
-        <p class="text-[#7D5F4B] text-sm">Surabaya</p>
+      <div
+        v-for="(item, index) in testimoni"
+        :key="index"
+        class="bg-[#F5E3C2] rounded-2xl p-6 shadow-sm border border-[#E5CDA3]"
+      >
+        <div class="text-yellow-500 text-xl mb-2">
+        {{ '★★★★★'.slice(0, item.bintang) }}
+        </div>
+        <p class="text-[#5B3A29] italic mb-4"> "{{  item.pesan }}"" </p>
+        <p class="font-semibold text-[#4A1C4F]"> {{  item.nama }} </p>
+        <p class="text-[#7D5F4B] text-sm"> {{ item.lokasi }} </p>
       </div>
-
-      <!-- CARD 2 -->
-      <div class="bg-[#F5E3C2] rounded-2xl p-6 shadow-sm border border-[#E5CDA3]">
-        <div class="text-yellow-500 text-xl mb-2">★★★★★</div>
-        <p class="text-[#5B3A29] italic mb-4">
-          “Wahhh ini enak banget!! harganya juga nggak terlalu mahal.”
-        </p>
-        <p class="font-semibold text-[#4A1C4F]">Tasya.</p>
-        <p class="text-[#7D5F4B] text-sm">Handil</p>
-      </div>
-
-      <!-- CARD 3 -->
-      <div class="bg-[#F5E3C2] rounded-2xl p-6 shadow-sm border border-[#E5CDA3]">
-        <div class="text-yellow-500 text-xl mb-2">★★★★★</div>
-        <p class="text-[#5B3A29] italic mb-4">
-          “Rasanya pas di lidah.”
-        </p>
-        <p class="font-semibold text-[#4A1C4F]">Chelsy</p>
-        <p class="text-[#7D5F4B] text-sm">Bogor</p>
-      </div>
-
     </div>
   </div>
 </section>
@@ -101,4 +75,5 @@
 
 <script setup>
 import { foto } from '@/data/foto'
+import { testimoni } from '@/data/testimoni'
 </script>
