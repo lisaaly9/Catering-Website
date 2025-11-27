@@ -40,11 +40,13 @@
         <!-- Menu desktop -->
         <div class="flex flex-1 items-center justify-center sm:justify-between">
           <div class="flex shrink-0 items-center">
-            <img
-              src="../assets/icons/logo.svg"
-              alt="Gudeg"
-              class="h-12 w-auto"
-            />
+            <router-link to="/" class="flex items-center">
+              <img
+                src="../assets/icons/logo.svg"
+                alt="Gudeg"
+                class="h-12 w-auto cursor-pointer"
+              />
+            </router-link>
           </div>
           <div class="hidden sm:ml-6 sm:block ml-auto mt-1">
             <div class="flex space-x-4">

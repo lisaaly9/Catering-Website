@@ -2,7 +2,9 @@
   <footer class="w-full bg-[#5B3A29] pt-14 text-[#FFF8E1]">
     <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-3 gap-12">
       <div class="flex gap-6 items-start ">
-        <img src="../assets/icons/logo.svg" alt="Gudeg Bu Wik" class="w-50 mt-1" />
+        <router-link to="/">
+          <img src="../assets/icons/logo.svg" alt="Gudeg Bu Wik" class="w-50 mt-1 cursor-pointer" />
+        </router-link>
         <p class="text-sm leading-relaxed w-64 mt-5 ">“Kami melayani catering harian, acara,dan prasmanan dengan cita rasa rumahan yang istimewa.”</p>
       </div>
 
