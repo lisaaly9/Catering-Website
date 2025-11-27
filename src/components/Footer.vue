@@ -25,6 +25,18 @@
         <p class="flex items-center gap-2 mt-1">📍 <span>Jl. Mawar No. 7, Sangatta Utara</span></p>
 
         <div class="flex gap-4 mt-4 text-xl">
+          <a href="https://wa.me/6282235210085" target="_blank" rel="noopener">
+            <img src="../assets/icons/whatsapp.png" alt="WhatsApp" class="w-7 h-7 hover:opacity-80 transition" />
+          </a>
+          <a href="https://instagram.com/lisa.lwy" target="_blank" rel="noopener">
+            <img src="../assets/icons/instagram.png" alt="Instagram" class="w-7 h-7 hover:opacity-80 transition" />
+          </a>
+          <a href="https://facebook.com/Ly_Layn" target="_blank" rel="noopener">
+            <img src="../assets/icons/facebook.png" alt="Instagram" class="w-7 h-7 hover:opacity-80 transition" />
+          </a>
+        </div>
+
+        <div class="flex gap-4 mt-4 text-xl">
           <i class="fa-brands fa-whatsapp"></i>
           <i class="fa-brands fa-instagram"></i>
           <i class="fa-brands fa-facebook"></i>
