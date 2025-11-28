@@ -23,21 +23,21 @@
 
         <!-- Panel kiri -->
         <div class="backdrop-blur-ms bg-white/60 p-8 rounded-3xl shadow-xl">
-            <h2 class="text-4xl font-bold text-[#5B3A29] mb-4">
+            <h2 class="mt-30 text-5xl font-bold text-[#5B3A29] mb-4">
                 Gudeg Bu Wik
             </h2>
 
-            <p class="text-[#5B3A29] leading-relaxed mb-6">
+            <p class="text-[#5B3A29] leading-relaxed mb-6 font-bold">
                 Halo! 👋 Terima kasih telah menghubungi kami ♡ <br>
                 ♡ Open Order: Senin – Jumat (10.00 – 22.00 WITA) <br>
                 ♡ Sabtu – Minggu: Libur (akan direspon hari Senin)
             </p>
 
-            <p class="text-[#5B3A29] mb-6">
+            <p class="text-[#5B3A29] mb-6 font-bold">
                 Untuk melakukan pemesanan catering, silahkan isi form disamping.
             </p>
 
-            <ul class="space-y-3 text-[#5B3A29] text-lg">
+            <ul class="space-y-3 text-[#5B3A29] text-lg font-bold">
                 <li>✅ Tepat waktu & higienis</li>
                 <li>🍗 Menu variatif setiap hari</li>
                 <li>🚚 Gratis ongkir area kota</li>
@@ -48,7 +48,7 @@
         <!-- Panel kanan -->
         <div class="backdrop-blur-ms bg-white/20 p-8 rounded-3xl shadow-xl border border-white/30">
 
-            <h2 class="text-3xl font-bold text-white mb-6">
+            <h2 class="text-3xl font-bold text-white mb-6 text-center">
                 Order Sekarang
             </h2>
 
@@ -68,6 +68,9 @@
 
                 <select class="w-full rounded-md bg-[#EBD2B2] text-[#5B3A29] px-4 py-3">
                     <option>Pilih Paket/Menu</option>
+                    <option>Makanan</option>
+                    <option>Parsel</option>
+                    <option>Snack</option>
                 </select>
 
                 <input type="number" placeholder="Jumlah Porsi"
@@ -77,10 +80,14 @@
                     class="w-full rounded-md bg-[#EBD2B2] text-[#5B3A29] px-4 py-3"></textarea>
 
                 <input type="date"
+                    :min="new Date().toISOString().split('T')[0]"
                     class="w-full rounded-md bg-[#EBD2B2] text-[#5B3A29] px-4 py-3">
 
                 <select class="w-full rounded-md bg-[#EBD2B2] text-[#5B3A29] px-4 py-3">
                     <option>Pilih Jenis Pembayaran</option>
+                    <option>QRIS</option>
+                    <option>Transfer Bank</option>
+                    <option>Tunai</option>
                 </select>
 
                 <button class="w-full bg-[#5B3A29] text-white font-medium py-3 rounded-lg">
