@@ -53,8 +53,19 @@
       :food="selectedFood"
       @close="showModal = false"
     />
-
   </section>
+
+  <section class="bg-gradient-to-t from-[#E17B34] to-[#E17B34] text-[#FFF8E1] py-9 px-6 text-center">
+      <h1 class="text-3xl font-bold leading-tight mb-4">"Sudah menemukan menu favoritmu?"</h1>
+      <p class="text-lg text-[#FFFFFF] mb-8">"Pesan sekarang dan kami siap antar ke lokasi Anda!"</p>
+      <div class="flex justify-center">
+					<router-link 
+					to="/order"
+					class="bg-white hover:bg-[#c56c2e] text-[#5B3A29] hover:text-white px-6 py-3 rounded-lg w-fit font-semibold shadow-md">
+					Pesan Sekarang
+				</router-link>
+				</div>
+    </section>
 </template>
 
 <script>

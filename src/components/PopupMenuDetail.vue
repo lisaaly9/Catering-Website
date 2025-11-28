@@ -48,10 +48,11 @@
           </div>
 
           <!-- tombol order -->
-          <button 
-            class="mt-6 px-5 py-2 rounded-xl bg-[#E17B34] text-white font-semibold hover:bg-[#cf6f2f] transition">
-            Pesan Sekarang
-          </button>
+            <router-link 
+              to="/order"
+              class="mt-6 px-5 py-2 rounded-xl bg-[#E17B34] text-white font-semibold hover:bg-[#cf6f2f] transition">
+              Pesan Sekarang
+        </router-link>
         </div>
       </div>
     </div>
