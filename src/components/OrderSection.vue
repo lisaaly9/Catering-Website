@@ -31,21 +31,21 @@
                 Untuk melakukan pemesanan catering, silahkan isi form disamping.
             </p>
             <ul class="space-y-3 text-[#5B3A29] text-lg font-bold">
-                <li>✅ Tepat waktu & higienis</li>
-                <li>🍗 Menu variatif setiap hari</li>
-                <li>🚚 Gratis ongkir area kota</li>
-                <li>🎀 Bisa pre-order & custom</li>
+                <li> Tepat waktu & higienis</li>
+                <li> Menu variatif setiap hari</li>
+                <li> Gratis ongkir area kota</li>
+                <li> Bisa pre-order & custom</li>
             </ul>
         </div>
 
         <div class="backdrop-blur-ms bg-white/20 p-8 rounded-3xl shadow-xl border border-white/30">
             <h2 class="text-3xl font-bold text-white mb-6 text-center"> Order Sekarang </h2>
             <form class="space-y-4">
-                <input type="text" placeholder="Nama Lengkap"
+                <input v-model="nama" type="text" placeholder="Nama Lengkap"
                     class="w-full rounded-md bg-[#EBD2B2] text-[#5B3A29] px-4 py-3">
-                <input type="email" placeholder="Email"
+                <input v-model="email" type="email" placeholder="Email"
                     class="w-full rounded-md bg-[#EBD2B2] text-[#5B3A29] px-4 py-3">
-                <input type="text" placeholder="Nomor Telepon (WhatsApp)"
+                <input v-model="wa" type="text" placeholder="Nomor Telepon (WhatsApp)"
                     class="w-full rounded-md bg-[#EBD2B2] text-[#5B3A29] px-4 py-3">
                 <input type="text" placeholder="Alamat Pengantaran"
                     class="w-full rounded-md bg-[#EBD2B2] text-[#5B3A29] px-4 py-3">
@@ -55,7 +55,6 @@
                     <option>Parsel</option>
                     <option>Snack</option>
                 </select>
-
                 <input type="number" placeholder="Jumlah Porsi" 
                     class="w-full rounded-md bg-[#EBD2B2] text-[#5B3A29] px-4 py-3">
                 <textarea rows="4" placeholder="*Catatan Tambahan" class="w-full rounded-md bg-[#EBD2B2] text-[#5B3A29] px-4 py-3"></textarea>
@@ -67,8 +66,7 @@
                     <option>Transfer Bank</option>
                     <option>Tunai</option>
                 </select>
-
-                <button class="w-full bg-[#5B3A29] text-white font-medium py-3 rounded-lg">
+                <button @click="kirimWA"   class="w-full bg-[#5B3A29] text-white font-medium py-3 rounded-lg">
                     Kirim via WhatsApp
                 </button>
             </form>
@@ -108,3 +106,27 @@
         </div>
     </section>   
 </template>
+
+
+<script>
+export default {
+    data() {
+        return {
+            nama: "",
+            email: "",
+            wa: "",
+        };
+    },
+
+
+    methods: {
+        kirimWA() {
+            if (!this.nama || !this.email || !this.wa) {
+                alert("Semua data wajib diisi yaa!");
+                return;
+            }
+            alert("Pesananmu sudah terkirim! tunggu balasannya yaa ^^");
+        }
+    }
+}
+</script>
