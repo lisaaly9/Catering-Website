@@ -14,6 +14,7 @@
         <router-link to="/menu" class="hover:underline">Menu</router-link>
         <router-link to="/gallery" class="hover:underline">Gallery</router-link>
         <router-link to="/order" class="hover:underline">Order</router-link>
+        <router-link to="/cots" class="hover:underline">About Me</router-link>
       </div>
 
       <!-- buat menghubungi  -->

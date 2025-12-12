@@ -80,6 +80,12 @@
                 active-class="bg-gray-900/50 text-white"
                 exact-active-class="bg-gray-900/50 text-white">Order
               </router-link>
+              <router-link
+                to="/cots"
+                class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-white/10"
+                active-class="bg-gray-900/50 text-white"
+                exact-active-class="bg-gray-900/50 text-white">About Me
+              </router-link>
             </div>
           </div>
         </div>
@@ -113,6 +119,11 @@
           to="/order"
           class="block rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-white/10"
           active-class="text-white">Order
+        </router-link>
+        <router-link
+          to="/cots"
+          class="block rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-white/10"
+          active-class="text-white">About Me
         </router-link>
       </div>
     </div>

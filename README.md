@@ -1,6 +1,14 @@
 # catering
+Nama : Lisa Sapitri
+NIM : 11241041
 
-This template should help get you started developing with Vue 3 in Vite.
+ File baru yang ditambahkan untuk COTS :
+ AboutMeSection.vue - component
+ card.js - data ( untuk vue directivesnya)
+ CotsPage.vue - pages
+ dan menambahkan halaman About Me di router supaya bisa berpindah halaman
+
+
 
 ## Recommended IDE Setup
 
